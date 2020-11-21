@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="searchapp.SearchController">
+   <children>
+      <GridPane layoutX="12.0" layoutY="75.0" prefHeight="225.0" prefWidth="586.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="128.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="470.0" minWidth="10.0" prefWidth="461.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="id">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="31.0" text="name" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="31.0" text="email" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="31.0" text="phone" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf1" style="-fx-background-radius: 10;" GridPane.columnIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tf2" layoutX="189.0" layoutY="27.0" style="-fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tf3" layoutX="189.0" layoutY="27.0" style="-fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tf4" layoutX="189.0" layoutY="27.0" style="-fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </GridPane>
+      <Label layoutX="199.0" layoutY="27.0" text="Student Informations" textFill="#f50cc3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label1" layoutX="498.0" layoutY="331.0" text="confirm" textFill="#f50808">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="133.0" layoutY="311.0" prefHeight="40.0" prefWidth="335.0" spacing="30.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onClickb1" prefHeight="20.0" prefWidth="80.0" text="&lt;= Back" />
+            <Button mnemonicParsing="false" onAction="#onClickb2" prefHeight="20.0" prefWidth="80.0" text="Forward=&gt;" />
+            <Button mnemonicParsing="false" onAction="#onClickb6" prefHeight="20.0" prefWidth="80.0" text="종료" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="133.0" layoutY="349.0" prefHeight="40.0" prefWidth="335.0" spacing="30.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onClickb3" prefHeight="20.0" prefWidth="80.0" text="Insert" />
+            <Button mnemonicParsing="false" onAction="#onClickb4" prefHeight="20.0" prefWidth="80.0" text="Update" />
+            <Button mnemonicParsing="false" onAction="#onClickb5" prefHeight="20.0" prefWidth="80.0" text="Delete" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

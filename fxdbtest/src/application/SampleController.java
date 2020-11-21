@@ -44,8 +44,6 @@ public class SampleController {
     @FXML
     void onClickb1(ActionEvent event) {
     	try {
-    		//		printTable(stmt);
-    	//	ResultSet srs = stmt.executeQuery("select * from student");
     		if(srs.next()) {
     			tf1.setText(srs.getString("id"));
     			tf2.setText(srs.getString("name"));
